@@ -10,5 +10,5 @@ if __name__ == '__main__':
     try:
         http_server = WSGIServer(('', port), app)
         http_server.serve_forever()
-    except:
+    finally:
         print("Exit by User or Error")
